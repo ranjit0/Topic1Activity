@@ -27,17 +27,20 @@ public class MainActivity extends AppCompatActivity {
         rdoAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 if (rdoAdd.isChecked()) {
-                    Toast.makeText(MainActivity.this,"Add radio button clicked",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Add radio button clicked", Toast.LENGTH_SHORT).show();
                 }
-
-
-
             }
-
         });
+        rdoSubtract.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(rdoSubtract.isChecked()){
+                    Toast.makeText(MainActivity.this,"subtract button clicked",Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
 
 
     }
